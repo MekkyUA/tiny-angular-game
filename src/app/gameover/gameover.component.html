@@ -1,0 +1,25 @@
+<div class="customDiv" *ngIf="won">
+
+<h1>Angular Game</h1>
+        <hr>
+        <h2>{{playername}}!</h2>
+				<h3>You got a new high Score :)</h3>
+        <h1>>> <font color='green'>{{newscore}}</font> <<</h1>
+<br>
+<input class="button button1" [routerLink]="['/play']" type='button' value='Play Again'>
+</div>
+
+
+<div class="customDiv" *ngIf="!won">
+
+<h1>Angular Game</h1>
+        <hr>
+        <h2>{{playername}}!</h2>
+				<h3>You lost :(</h3>
+        <br>
+        <h2>Current score: <font color='red'>{{newscore}}</font></h2>
+        <h2>Highest Score: <font color='green'>{{highscore}}</font></h2>
+        <br>
+<input class="button button1" [routerLink]="['/play']" type='button' value='Play Again'>
+
+</div>

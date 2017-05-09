@@ -1,0 +1,19 @@
+.gameWindow {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background: silver;
+  border: 2px solid red;
+}
+.gameWindow > .box {
+  position: absolute;
+}
+
+.customDiv {
+    position: relative;
+    background-color: orange;
+    width: 400px;
+    height: 100px;
+    border: 2px solid green;
+    top: 5px;
+}

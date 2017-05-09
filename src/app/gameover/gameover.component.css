@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+span {
+    font-style: italic;
+}
+
+.customDiv {
+    position: relative;
+    background-color: lightgrey;
+    width: 400px;
+    height: 600px;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3  {
+    text-align: center;
+}
+form {
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+<div class ="gameWindow">
+  <div *ngFor='let index of indexer' 
+  class="box" 
+  [style.top]='top' 
+  [style.width]='width' 
+  [style.height]='height'
+  [style.background]='backgrounds[index%(backgrounds.length)]'
+  [style.left]='lefts[index%(lefts.length)]'  
+  (click)="boxClicked($event);"></div>
+</div>
+
+<div class="customDiv">
+<p>
+  <font size="6">
+  Score: {{score}}
+  <br />
+  Missed green boxes: {{MissedGreenBoxes}}
+  </font>
+</p>
+</div>

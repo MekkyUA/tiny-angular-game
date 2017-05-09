@@ -1,0 +1,31 @@
+<div class="customDiv" *ngIf="!loggedIn">
+
+ <h1>Angular Game</h1> 
+ <hr> 
+ <h3> -Name:</h3> 
+ <input type='text' id='yourname' #playername value=''  placeholder='Your name..'> 
+ <h3>-Difficulty:</h3> 
+    <select id='soflow-color' [(ngModel)]="difficulty">
+        <option *ngFor="let level of levels" [ngValue]="level.name">{{level.name}}</option>
+    </select>
+ <br><br><br><br><br><br>
+ <button class='button button1' [routerLink]="['/play']" (click)='saveCookies(playername.value)'>Start</button>
+
+</div>
+
+<div class="customDiv" *ngIf="loggedIn">
+
+<h1>Angular Game</h1>
+<hr>
+
+<h2>Welcome <font color='blue'>{{playername}}</font>!</h2>
+<br> 
+<h2>Selected difficulty is <font color='blue'>{{difficulty}}</font></h2>
+<br> 
+<h2>High Score: <font color='blue'>{{highScore}}</font></h2>
+<br><br>
+<button class='button button3' (click)='forgetMe()'>Forget Me</button>
+<br><br>
+<button class='button button1' [routerLink]="['/play']">Start</button>
+
+</div>
