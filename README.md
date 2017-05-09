@@ -12,3 +12,7 @@ You can install @angular/cli
 4- Type "npm install" then "ng serve -o"  
   
 Have fun & feel free to ask :)  
+
+Contributors:  
+Ahmed Gamal Hussein (FCIH)  
+  
